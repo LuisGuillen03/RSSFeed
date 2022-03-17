@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/NombreArtista"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="Cancion">
+
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/NombreArtista"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/NombreArtista">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Artista">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
